@@ -40,17 +40,17 @@ short_side=(top_width/2)-(leg_width/2);
 long_side=(top_length/2)-(leg_length/2);
 
 // Back
-#translate ([-short_side,long_side,0])
+translate ([-short_side,long_side,0])
   square_tube(tube_width=leg_width, tube_length=leg_length, tube_height=leg_height);
 
-#translate ([-short_side,-long_side,0])
+translate ([-short_side,-long_side,0])
   square_tube(tube_width=leg_width, tube_length=leg_length, tube_height=leg_height);
 
 // Front
-#translate ([short_side,long_side,0])
+translate ([short_side,long_side,0])
   square_tube(tube_width=leg_width, tube_length=leg_length, tube_height=leg_height);
 
-#translate([short_side,-long_side,0])
+translate([short_side,-long_side,0])
   square_tube(tube_width=leg_width, tube_length=leg_length, tube_height=leg_height);
   
 // Table Surface
@@ -75,7 +75,7 @@ translate([-top_length/2+leg_width/2,top_width/2,(-top_width/2)+(leg_width)])
 translate([top_length/2-leg_width/2,top_width/2,(-top_width/2)+(leg_width)])
   square_tube(tube_width=support_width, tube_length=support_length, tube_height=top_width-(2*leg_width));}
 
-/*
+
 // Supports Under Top
 // Front
 rotate([90,0,0]){
@@ -93,4 +93,4 @@ translate([-top_length/2+leg_width/2,top_width/2,(-top_width/2)+(leg_width)])
 
 // Side 2
 translate([top_length/2-leg_width/2,top_width/2,(-top_width/2)+(leg_width)])
-  square_tube(tube_width=support_width, tube_length=support_length, tube_height=top_width-(2*leg_width));}*/
+  square_tube(tube_width=support_width, tube_length=support_length, tube_height=top_width-(2*leg_width));}
